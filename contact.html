@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/style.css">
-    <title>Matthew Pate's Portfolio</title>
-  </head>
-    <body>
-        <header>
-            <img src="/MPLogo.png" class="logo" alt="Matthew Pate's Portfolio logo">
-            <nav><a href="resume/resume.html">Resume</a><a href="/aboutme/about.html">About Me</a><a href="/blog/blog.html">My Blog</a><a href="/contact/contact.html">Contact Me</a></nav>
-            <main>
-                <h1>Contact Details</h1>
-                <h2>Digital Marketing Coordinator</h2>
-                <button id="portfolio">Portfolio</button>
-                              <a class="small-text" href="https://www.com/">© 2021 Matthew Pate</a>
-            </main>
-    </body>
-  </html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.js" type="text/Javascript">
+
+  <title>Matthew Pate's Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <a href="./index.html"><img src="./MPLogo.png" class="logo" alt="Matthew Pate's Portfolio logo"></a>
+    <nav><a href="./resume.html">Resume</a><a href="./about.html">About Me</a><a href="./blog.html">My Blog</a><a
+        href="./contact.html">Contact Me</a></nav>
+    <main>
+      <div class="row">
+        <div class="column">
+          <h1>Contact Details</h1>
+        </div>
+
+        <div class="column">
+          <div class="contactform">
+            <form action="action_page.php">
+
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="pnumber">Phone Number</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+              <input type="submit" value="Submit">
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <a class="small-text" href="https://www.com/">© 2021 Matthew Pate</a>
+    </main>
+</body>
+
+</html>
