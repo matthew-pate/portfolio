@@ -1,227 +1,143 @@
-#logo {
-  width: 5%;
-} 
-#navbar {
-  overflow: hidden;
-  background-color: #737373;
-  width: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
-#navbar a {
-  padding: 0;
+* {
   margin: 0;
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
+  font-family 'Roboto', sans-serif; }
+
+li {
+  list-style: none;
+}
+
+a { 
   text-decoration: none;
-  font-size: 17px;
 }
 
-#navbar a:hover {
-  background-color: #ddd;
-  color: maroon;
+.header{
+  border-bottom: 1px solid #E2E8F0;
 }
 
-#navbar a.active {
-  background-color: maroon;
-  color: white;
-}
- 
-.content {
-  padding: 16px;
-} 
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
 }
 
-.sticky + .content {
-  padding-top: 60px;
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+a {
+  color:#AE1B01;
+}
+
+a:hover{
+  color:#304B62;
+}
+
+
+.nav-logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      right: -100%;
+      top: 30px;
+      flex-direction: column;
+      background-color: #ffffff;
+      width: 50%;
+      border-radius: 15px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+      right: 0;
+      color:#304B62;
+  }
+
+  .nav-item {
+      margin: 3px 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 body {
-    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgrey;
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
+    background-color: white;
+    background-image: url('./kara-eads-OG84g8FREK4-unsplash.jpeg');
     background-repeat: no-repeat;
-    background-size: 1600px 1000px;
-    width: 100%;
-    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
   }
  
-  main {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-  }
- 
-  /* This is an element within and element selector */ 
-  nav > a {
-    margin: 2% 2% 2%;
-    height: 15%;
-    width: max-content;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    border-radius: 20px;
-    background: transparent;
-    background-image: linear-gradient(maroon, grey);
-    padding: 20px;
-    text-align: center;
-    border: 3px solid #737373;
-  }
- 
-  .has-border {
-    border-radius: 25px;
-    border: 2px solid maroon;
-    background: none;
-    padding: 20px;
-  }
-
-  #profile-pic {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 15% auto;
-    grid-column: 2/3;
-  }
+#main-image {
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-radius: 50%; */
+  padding-top: 100px;
+}
  
   h1 {
     color:maroon;
-    grid-column: 2/3;
-    margin: 3% auto;
-    border-bottom: 2px solid #737373;;
-  }
- 
-  h2 {
-    grid-column: 2/3;
-    margin: 3% auto;
-    font-style: italic;
-  }
- 
-  .small-text {
-    grid-column: 2/3;
-    color: maroon;
-    font-size: 10px;
-    margin: 3% auto;
-  }
- 
-  button {
-    grid-column: 2/3;
-    margin: 3% auto;
-    width: 70%;
-    height: 15%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 25px;
-    /* background: transparent; */
-    background-image: linear-gradient(grey, maroon);
-    padding: 15px;
-    padding-bottom: 5%;
     text-align: center;
-    color: white;
-    letter-spacing: 15px;
-    font-style: italic;
-    box-shadow: 0 12px 16px 0 maroon;
-  }
-  
-  .active {
-    background-color: maroon;
-  }
-  
-  .container {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  /* Rotate first bar */
-  .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {
-    opacity: 0;
-  }
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+    margin: 100px;
   }
 
-  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: auto; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.contactform {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-.column {
-  float: left;
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
-
-#footer {
+footer {
   position: absolute;
-  bottom: 0;
+  text-align: center;
   width: 100%;
-  height: 2.5rem;            /* Footer height */
-} */
+  margin-top: 500px;
+}
