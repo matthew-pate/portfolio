@@ -172,10 +172,20 @@ body {
   margin-left: 25px;
 }
 
+.social-buttons{
+  color: #2d4b5e;
+  font-size: 50px;
+  margin-left: 70px;
+}
 
 @media only screen and (max-width: 768px) {
   .column.resume-content {
     width: 100%;
+  }
+
+  .social-buttons{
+    font-size: 30px;
+    margin-left: 25px;
   }
 }
 
