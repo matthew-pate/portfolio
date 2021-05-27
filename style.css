@@ -56,11 +56,11 @@ a {
 }
 
 a {
-  color:#AE1B01;
+  color:#304B62;
 }
 
 a:hover{
-  color:#304B62;
+  color:#AE1B01;
 }
 
 
@@ -152,10 +152,10 @@ body {
 }
 
 #zoey-records{
-  width: 500px;
+  width: 70%;
+  max-width: 500px;
   height: auto;
-  /* margin-top: 0px; */
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 .row {
@@ -165,6 +165,7 @@ body {
 
 .column {
   flex: 50%;
+  column-gap: 25px;
 }
 
 .resume-content{
@@ -195,4 +196,5 @@ footer {
   text-align: center;
   width: 100%;
   margin-top: 800px;
+  background-color: #fafafa;
 }
