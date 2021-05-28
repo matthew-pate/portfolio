@@ -65,12 +65,16 @@ a:hover{
 
 
 .nav-logo {
-  font-size: 48px;
+  font-size: 19px;
   font-weight: bold;
   color: black;
 }
 
 @media only screen and (max-width: 768px) {
+
+  .nav-logo {
+    font-size: 32px; }
+ 
   .nav-menu {
       position: fixed;
       right: -100%;
@@ -160,17 +164,18 @@ body {
 
 .row {
   display:flex;
+  flex-wrap: wrap;
   margin-top: 75px;
 }
 
 .column {
   flex: 50%;
-  column-gap: 25px;
 }
 
 .resume-content{
   flex: 50%;
-  margin-left: 25px;
+  padding-left: 100px;
+  padding-top: 25px;
 }
 
 .social-buttons{
@@ -180,8 +185,16 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .column.resume-content {
-    width: 100%;
+  .image-column {
+    flex: 100%;
+  }
+  .text-column {
+    flex: 100%;
+    margin-left: 50px;
+    padding-top: 25px;
+  }
+  .resume-content {
+    flex: 100%;
   }
 
   .social-buttons{
