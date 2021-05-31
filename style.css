@@ -184,6 +184,23 @@ body {
   margin-left: 70px;
 }
 
+.contact-form{
+  display: block;
+  text-align: center;
+  background-color: lightgrey;
+  padding: 25px 25px;
+  /* margin-left: 550px;
+  margin-right: 550px; */
+  /* opacity: .7; */
+  /* width: 400px; */
+}
+
+#comments{
+  width: auto;
+  height: 200px;
+  text-align:start;
+}
+
 @media only screen and (max-width: 768px) {
   .image-column {
     flex: 100%;
@@ -200,6 +217,15 @@ body {
   .social-buttons{
     font-size: 30px;
     margin-left: 25px;
+  }
+
+  .contact-form{
+    display: block;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 25px 25px;
+    /* margin-left: 250px;
+    margin-right: 250px; */
   }
 }
 
