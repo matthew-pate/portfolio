@@ -185,14 +185,13 @@ body {
 }
 
 .contact-form{
-  display: block;
+  display: grid;
   text-align: center;
-  background-color: lightgrey;
+  background-color: rgb(211,211,211, 0.9);
+  width: 35%;
+  /*height: auto; */
+  margin-left: 475px;
   padding: 25px 25px;
-  /* margin-left: 550px;
-  margin-right: 550px; */
-  /* opacity: .7; */
-  /* width: 400px; */
 }
 
 #comments{
@@ -220,13 +219,12 @@ body {
   }
 
   .contact-form{
-    display: block;
+    display: grid;
     text-align: center;
-    background-color: lightgrey;
+    width: 45%;
     padding: 25px 25px;
-    /* margin-left: 250px;
-    margin-right: 250px; */
-  }
+    margin-left: 150px;
+    }
 }
 
 
