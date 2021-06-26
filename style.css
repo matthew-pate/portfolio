@@ -92,6 +92,7 @@ a:hover{
   .nav-menu.active {
       right: 0;
       color:#304B62;
+      z-index: 1;
   }
 
   .nav-item {
@@ -101,6 +102,7 @@ a:hover{
   .hamburger {
       display: block;
       cursor: pointer;
+      z-index: 1;
   }
 }
 
@@ -184,12 +186,11 @@ body {
   margin-left: 70px;
 }
 
-.contact-form{
+#contact-form{
   display: grid;
   text-align: center;
   background-color: rgb(211,211,211, 0.8);
   width: 35%;
-  /*height: auto; */
   margin-left: 475px;
   padding: 25px 25px;
 }
@@ -218,7 +219,7 @@ body {
     margin-left: 25px;
   }
 
-  .contact-form{
+  #contact-form{
     display: grid;
     text-align: center;
     width: 45%;
@@ -232,6 +233,6 @@ footer {
   position: absolute;
   text-align: center;
   width: 100%;
-  margin-top: 800px;
+  margin-top: 500px;
   background-color: #fafafa;
 }

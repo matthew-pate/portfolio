@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['Email'])) {
+if (isset($_POST['email'])) {
 
     // EDIT THE FOLLOWING TWO LINES:
     $email_to = "mattpate@gmail.com";
@@ -21,7 +21,7 @@ if (isset($_POST['Email'])) {
         !isset($_POST['email']) ||
         !isset($_POST['comments'])
     ) {
-        problem('We're sorry, but there appears to be a problem with the form you submitted.');
+        problem("We're sorry, but there appears to be a problem with the form you submitted.");
     }
 
     $fname = $_POST['fname']; // required
@@ -68,10 +68,10 @@ if (isset($_POST['Email'])) {
     $email_message .= "Message: " . clean_string($comments) . "\n";
 
     // create email headers
-    $headers = 'From: ' . $email . "\r\n" .
-        'Reply-To: ' . $email . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
+    $headers = 'From: ' . $email . "\r\n";
+    $headers .= 'Reply-To: ' . $email . "\r\n";
+    'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
     <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
