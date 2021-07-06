@@ -141,6 +141,17 @@ body {
     margin: 10px;
   }
 
+  #resumelinks {
+  color:black;
+  text-align: center;
+
+  }
+
+  #moreprodsupport, #morecs, #moresem, #moreld,  #moreapple, #moreminacs {
+    display: none;
+  }
+
+
 .iframe-container{
   position:relative ;
   overflow: hidden;
