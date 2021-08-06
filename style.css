@@ -214,17 +214,17 @@ body {
   margin-right: 50px;
 }
 
-.social-buttons{
+.social-buttons{ 
   color: #2d4b5e;
   font-size: 50px;
-  margin-left: 65px;
+  /* margin-left: 65px; */
 }
 
-#contact-form{
+#contact-form {
   display: block;
   text-align: center;
   background-color: rgb(211,211,211, 0.8);
-  width: 30%;
+  width: 50%;
   margin: auto;
   padding: 25px 25px;
   border-radius: 10%;
@@ -232,15 +232,16 @@ body {
 
 input, textarea, select {
   font-size: 16px;
-  width: 180px;
+  width: 50%;
   display: block;
-  margin:auto;
+  margin: auto;
 }
 
 #comments{
-  width: 180px;
-  height: 200px;
-  text-align:start;
+  height: 100px;
+  display:block;
+  margin: auto;
+  text-align:start; 
 }
 
 @media only screen and (max-width: 768px) {
@@ -264,7 +265,7 @@ input, textarea, select {
     margin-left: 25px;
   }
 
-  #contact-form{
+  #contact-form {
     display: grid;
     text-align: center;
     width: 50%;
