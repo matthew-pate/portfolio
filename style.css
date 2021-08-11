@@ -188,6 +188,9 @@ width: 100%;
 
 /*Volunteer page*/
 
+.another-volunteer {
+  display: none;
+}
 .volunteer-content {
   flex: 50%;
   padding-left: 100px;
