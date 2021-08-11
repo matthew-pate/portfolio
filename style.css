@@ -160,8 +160,21 @@ width: 100%;
 
 /*Portfolio page*/
 
-#iOS-Calculator-1 {
-  margin-right: 50px;
+.iOS-Calc-img {
+padding: 60px;
+  width: 300px;
+  height: 300px;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.5;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.iOS-Calc-img:hover {
+  opacity: 1;
 }
 
 /*Portfolio page*/
@@ -348,4 +361,5 @@ margin-left: 20px;
     padding-left: 100px;
     width: 100%;
     flex: 100%;
+} 
 }
