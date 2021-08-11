@@ -1,5 +1,10 @@
+/*Import social icons*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
+/*Import social icons*/
+
+/*Main schemes*/
 * {
   margin: 0;
   padding: 0;
@@ -10,52 +15,21 @@ html {
   font-size: 62.5%
   font-family 'Roboto', sans-serif; }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  background-image: url('./kara-eads-OG84g8FREK4-unsplash.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 li {
   list-style: none;
 }
 
 a { 
   text-decoration: none;
-}
-
-.header{
-  border-bottom: 1px solid #E2E8F0;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.5rem;
-}
-
-.hamburger {
-  display: none;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item {
-  margin-left: 30px;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-a {
   color:#304B62;
 }
 
@@ -63,120 +37,98 @@ a:hover{
   color:#AE1B01;
 }
 
+h1 {
+  color:maroon;
+  text-align: center;
+  margin: 10px;
+}
+
+.header{
+  border-bottom: 1px solid #E2E8F0;
+}
+
+/* Nav */
 
 .nav-logo {
-  font-size: 19px;
+  font-size: 32px;
   font-weight: bold;
   color: black;
+  }
+  
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
-@media only screen and (max-width: 768px) {
+.nav-item {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  display: inline;
+  padding: 8px;
 
-  .nav-logo {
-    font-size: 32px; }
- 
-  .nav-menu {
-      position: fixed;
-      right: -100%;
-      top: 30px;
-      flex-direction: column;
-      background-color: #ffffff;
-      width: 50%;
-      border-radius: 15px;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow:
-          0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-
-  .nav-menu.active {
-      right: 0;
-      color:#304B62;
-      z-index: 1;
-  }
-
-  .nav-item {
-      margin: 3px 0;
-  }
-
-  .hamburger {
-      display: block;
-      cursor: pointer;
-      z-index: 1;
-  }
 }
 
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
+.hamburger {
+  display: none;
 }
 
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
+/* Nav */
 
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
+/*Main schemes*/
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    background-image: url('./kara-eads-OG84g8FREK4-unsplash.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
- 
+/*Landing page*/
+
 #main-image {
   display:flex;
   margin-left: auto;
   margin-right: auto;
-  /* border-radius: 50%; */
   padding-top: 100px;
 }
+
 #titleText {
   background-color: rgba(255, 255, 255, 0.9);
 }
- 
-  h1 {
-    color:maroon;
-    text-align: center;
-    margin: 10px;
-  }
+
+/*Landing page*/
+
+/*About page*/
+
+#about-content {
+  background-color: rgb(211,211,211, 0.8);
+min-height: 550px;
+width: 100%;
+}
+
+.img2 {
+  float: left;
+}
+
+#img2 {
+  width: 400px;
+  margin-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+}
+.about-column {
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-left: 50px;
+  padding-top: 70px;
+}
+
+ /*About page*/
+
+/*Resume page*/
 
   #resumelinks {
   color:black;
   text-align: center;
-
   }
-
-  #moreprodsupport, #morecs, #moresem, #moreld,  #moreapple, #moreminacs {
-    display: none;
-  }
-
-
-.iframe-container{
-  position:relative ;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 75%;
-}
-.music-blog{
-  position: absolute;
-  top: 10px;
-  left: 140px;
-  bottom: 0;
-  right: 0;
-  width: 80%;
-  height: 50%;
-}
-
-#zoey-records{
-  width: 70%;
-  max-width: 500px;
-  height: auto;
-  margin-left: 100px;
-}
 
 .row {
   display:flex;
@@ -200,6 +152,42 @@ body {
   height: 500px;
 }
 
+#moreprodsupport, #morecs, #moresem, #moreld,  #moreapple, #moreminacs {
+  display: none;
+}
+
+/*Resume page*/
+
+/*Portfolio page*/
+
+#iOS-Calculator-1 {
+  margin-right: 50px;
+}
+
+/*Portfolio page*/
+
+/*Blog page*/
+.iframe-container{
+  position:relative ;
+  overflow: scroll;
+  width: 100%;
+  padding-top: 75%;
+}
+
+.music-blog{
+  position: absolute;
+  top: 10px;
+  left: 140px;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 55%;
+}
+
+/*Blog page*/
+
+/*Volunteer page*/
+
 .volunteer-content {
   flex: 50%;
   padding-left: 100px;
@@ -210,28 +198,22 @@ body {
   height: 500px;
 }
 
-#iOS-Calculator-1 {
-  margin-right: 50px;
-}
+/*Volunteer page*/
 
-.social-buttons{ 
-  color: #2d4b5e;
-  font-size: 50px;
-  /* margin-left: 65px; */
-}
+/*Contact page*/
 
 #contact-form {
   display: block;
   text-align: center;
   background-color: rgb(211,211,211, 0.8);
-  width: 50%;
+  width: 70%;
   margin: auto;
   padding: 25px 25px;
   border-radius: 10%;
 }
 
 input, textarea, select {
-  font-size: 16px;
+  font-size: 14px;
   width: 50%;
   display: block;
   margin: auto;
@@ -242,44 +224,125 @@ input, textarea, select {
   display:block;
   margin: auto;
   text-align:start; 
-}
+}  
+
+.social-buttons{
+    font-size: 32px;
+    min-width: 225px;
+    color: #2d4b5e;
+  }
+
+  .fa, .fab, .fad, .fal, .far, .fas {
+    height: 24px;
+    width: 24px;
+    margin: 8px;
+  }
+
+  /*Contact page*/
+  
+  footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 600px;
+    background-color: #fafafa;
+  }
+
+
 
 @media only screen and (max-width: 768px) {
-  .image-column {
-    flex: 100%;
-  }
-  .text-column {
-    flex: 100%;
-    margin-left: 50px;
-    padding-top: 25px;
-  }
-  .resume-content {
-    flex: 100%;
-  }
 
-  .volunteer-content {
-    flex: 100%;
-  }
-  .social-buttons{
-    font-size: 30px;
-    margin-left: 25px;
-  }
-
-  #contact-form {
-    display: grid;
-    text-align: center;
+.nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 30px;
+    flex-direction: column;
+    background-color: #ffffff;
     width: 50%;
-    border-radius: 3%;
-    padding: 25px 25px;
-    margin-left: auto;
-    }
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+.nav-menu.active {
+  right: 0;
+  color:#304B62;
+  z-index: 1;
 }
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
 
-footer {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  margin-top: 60px;
-  background-color: #fafafa;
+.hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.hamburger.active .bar:nth-child(2) {
+opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+}
+
+#about-content {
+  background-color: rgb(211,211,211, 0.8);
+  width:100%
+}
+
+.img2 {
+  margin-left: -20px;
+}
+
+#img2 {
+margin-left: 20px;
+}
+
+.about-column {
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 50px;
+  padding-top: 520px;
+  margin-right: 50px;
+} 
+
+.iframe-container{
+    position:relative;
+    overflow: scroll;
+    width: 100%;
+    padding-top: 75%;
+  }
+  
+  .music-blog{
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    bottom: 60px;
+    right: 25px;
+    width: 90%;
+    height: 5000px;
+  }
+
+  .img2, .resume-content, .volunteer-content, .about-column {
+    flex: 100%;
+    padding-left: 100px;
+    width: 100%;
+    flex: 100%;
 }
